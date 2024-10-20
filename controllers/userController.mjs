@@ -23,7 +23,7 @@ export const addUser = async (req, res) => {
     }
 };
 
-// Update a user
+
 export const updateUser = async (req, res) => {
     const { id } = req.params;
     const { name, email } = req.body;
