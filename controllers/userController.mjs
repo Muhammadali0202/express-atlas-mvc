@@ -1,7 +1,7 @@
 import { User } from "../model/User.mjs";
 
 
-// Get all users
+
 export const getAllUsers = async (req, res) => {
     try {
         const users = await User.find();
@@ -11,7 +11,7 @@ export const getAllUsers = async (req, res) => {
     }
 };
 
-// Add a new user
+
 export const addUser = async (req, res) => {
     const { name, email } = req.body;
     const newUser = new User({ name, email });
